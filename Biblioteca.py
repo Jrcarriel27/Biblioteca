@@ -35,7 +35,7 @@ adicionar_livro('1984', 'George Orwell', 'Ficção Científica.')
 adicionar_livro('O Senhor dos Anéis - A Sociedade do Anél', 'J.R.R. Tolkien', 'Fantasia.')
 adicionar_livro('Harry Potter e a Pedra Filosofal', 'J.K. Rowling', 'Fantasia.')
 adicionar_livro('O Pequeno Príncipe', 'Antoine de Saint-Exupéry', 'Infantil.')
-adicionar_livro('O Senhor dos Anéis - As Duas Torres.')
+adicionar_livro('O Senhor dos Anéis - As Duas Torres', 'J.R.R. Tolkien', 'Fantasia.')
 
 # Lista todos os livros na biblioteca
 listar_livros()
@@ -44,11 +44,11 @@ listar_livros()
 contagem_por_genero = {}
 for livro in biblioteca:
     genero = livro.genero
-    contagem_por_geneno[genero] = contagem_por_genero.get(genero, 0) + 1
+    contagem_por_genero[genero] = contagem_por_genero.get(genero, 0) + 1
 
 # Criar um grafíco de barras
 plt.bar(contagem_por_genero.keys(), contagem_por_genero.values(), color='skyblue')
 plt.xlabel('Gênero')
 plt.ylabel('Número de Livros.')
-plt.title('Distribuição de Livros na Biblioteca por Gênerod')
+plt.title('Distribuição de Livros na Biblioteca por Gênero')
 plt.show()
